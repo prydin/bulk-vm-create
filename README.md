@@ -65,7 +65,9 @@ git clone https://github.com/prydin/bulk-vm-create.git
 ```
 
 2. Download dependencies
-```pip install -r requirements.txt```
+```
+pip install -r requirements.txt
+```
 
 On some systems, you may have to use ```pip3```.
 
