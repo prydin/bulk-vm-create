@@ -1,0 +1,5 @@
+# name,template,image,cpus,mbmem,gbdisk
+mickey,Generic vSphere VM,demo-1,1,1024,30
+minnie,Generic vSphere VM,demo-2,2,1024,30
+donald,Generic vSphere VM,demo-1,2,2048,30
+goofy,Generic vSphere VM,demo-2,1,1024,30
