@@ -56,10 +56,31 @@ similar to this:
 
 Copy the text after the "refresh_token" tag (exclude any quotes). This is your API token.
 
+## Installation
+
+1. Download ZIP file at https://github.com/prydin/bulk-vm-create/archive/main.zip - OR -
+Clone the repository:
+```bash
+git clone https://github.com/prydin/bulk-vm-create.git
+```
+
+2. Download dependencies
+```pip install -r requirements.txt```
+
+On some systems, you may have to use ```pip3```.
+
 ## How to run
 
+Usage:
 ```bash
-$ python3 bulkdeploy.py -u https://api.mgmt.cloud.vmware.com -f vms.csv -t token -p myProj
+python bulkdeploy.py -f <input file> -u <url> -t <API token> -p <project name>
+```
+On some systems, you may have to use ```python3```.
+
+
+Example:
+```bash
+$ python bulkdeploy.py -u https://api.mgmt.cloud.vmware.com -f vms.csv -t token -p myProj
 ```
 
 ## Sample Cloud Template

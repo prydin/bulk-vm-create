@@ -11,7 +11,7 @@ MEM_FIELD = 4
 DISK_FIELD = 5
 
 PROGRAM = "bulkdeploy.py"
-USAGE = PROGRAM + '-f <input file> -u <url> -t <API token> -p <project name>'
+USAGE = PROGRAM + ' -f <input file> -u <url> -t <API token> -p <project name>'
 
 url = ''
 token = ''
