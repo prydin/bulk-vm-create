@@ -1,0 +1,38 @@
+name: Generic vSphere VM
+version: 1
+formatVersion: 1
+inputs:
+  cpuCount:
+    type: integer
+    title: CPU Count
+    default: 1
+    minimum: 1
+    maximum: 8
+  memMB:
+    type: integer
+    title: Memory (MB)
+    minimum: 1024
+    maximum: 65535
+    default: 1024
+  diskGB:
+    type: integer
+    title: Disk Size (GB)
+    minimum: 16
+    maximum: 1024
+  image:
+    type: string
+    title: Image
+resources:
+  Cloud_vSphere_Disk_1:
+    type: Cloud.vSphere.Disk
+    properties:
+      capacityGb: '${input.diskGB}'
+  Cloud_vSphere_Machine_1:
+    type: Cloud.vSphere.Machine
+    properties:
+      newName: '${env.deploymentName}'
+      image: '${input.image}'
+      cpuCount: '${input.cpuCount}'
+      totalMemoryMB: '${input.memMB}'
+      attachedDisks:
+        - source: '${resource.Cloud_vSphere_Disk_1.id}'
