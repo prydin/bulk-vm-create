@@ -19,7 +19,7 @@ You can find a sample input file [here](vms.csv).
 
 ## Authentication
 This tool relies on API token-based authentication. You can obtain an API token for a user as follows. Notice that
-there are different procedures for cloud (SaaS) ans on-premises installations.
+there are different procedures for cloud (SaaS) and on-premises installations.
 
 #### Cloud (SaaS)
 1. Go drop down the menu from your user name displayed towards the top-right corner.
